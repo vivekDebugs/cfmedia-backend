@@ -1,0 +1,18 @@
+name = "worker-posts"
+type = "javascript"
+zone_id = ""
+account_id = "82a559d1890d290f8d3894f6052fadaf"
+route = ""
+workers_dev = true
+compatibility_date = "2021-12-18"
+
+[build]
+command = "npm install && npm run build"
+[build.upload]
+format = "service-worker"
+
+[[kv_namespaces]]
+binding = "POSTS"
+preview_id = "caca6c11af76476684b452b8ea73fc86"
+id = "caca6c11af76476684b452b8ea73fc86"
+
